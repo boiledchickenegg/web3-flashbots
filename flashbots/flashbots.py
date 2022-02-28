@@ -88,7 +88,7 @@ class Flashbots(Module):
 
                 # and update the tx details
                 tx["from"] = signer.address
-                tx["gasPrice"] = 0
+#                 tx["gasPrice"] = 0
                 if "gas" not in tx:
                     tx["gas"] = self.web3.eth.estimateGas(tx)
                 # sign the tx
